@@ -67,14 +67,11 @@ footer a {
 }
 
 article {
-  text-align: center;
-}
-
-.deviceWrap {
   background-position: top center;
   background-repeat: no-repeat;
   margin: 25px 0;
   position: relative;
+  text-align: center;
   width: 100%;
 }
 
@@ -98,7 +95,7 @@ article {
   top: 0;
 }
 
-#devices iframe {
+article iframe {
   border: 1px solid #d1d1d1;
   height: 100%;
   margin: 0;
@@ -112,13 +109,12 @@ span.time {
   font-size: 12px;
 }
 
-
-.deviceWrap p {
+article p {
   color: #777;
-  display: inline-block;
+  display: inline;
+  font-size: 11px;
   left: 50%;
-  margin: 0 auto;
-  margin-left: -128px;
+  margin: 0 0 0 -128px;
   min-width: 256px;
   position: absolute;
   top: 1px;
@@ -137,10 +133,6 @@ span.time {
   height: 504px;
 }
 
-.iphone-5-portrait .flashingTop {
-  width: 320px;
-}
-
 
 /* iPhone 5 landscape  */
 
@@ -152,10 +144,6 @@ span.time {
 .iphone-5-landscape .device {
   width: 585px;
   height: 256px;
-}
-
-.iphone-5-landscape .flashingTop {
-  width: 568px;
 }
 
 
@@ -171,10 +159,6 @@ span.time {
   height: 603px;
 }
 
-.iphone-6-portrait .flashingTop {
-  width: 320px;
-}
-
 
 /* iPhone 6 landscape */
 
@@ -186,10 +170,6 @@ span.time {
 .iphone-6-landscape .device {
   width: 684px;
   height: 311px;
-}
-
-.iphone-6-landscape .flashingTop {
-  width: 667px;
 }
 
 
@@ -205,10 +185,6 @@ span.time {
   height: 672px;
 }
 
-.iphone-6-plus-portrait .flashingTop {
-  width: 414px;
-}
-
 
 /* iPhone 6+ landscape */
 
@@ -220,10 +196,6 @@ span.time {
 .iphone-6-plus-landscape .device {
   width: 753px;
   height: 350px;
-}
-
-.iphone-6-plus-landscape .flashingTop {
-  width: 736px;
 }
 
 
@@ -240,10 +212,6 @@ span.time {
   padding-bottom: 0;
 }
 
-.nexus-4-portrait .flashingTop {
-  width: 384px;
-}
-
 
 /* Nexus 4 landscape */
 
@@ -256,10 +224,6 @@ span.time {
   width: 617px;
   height: 364px;
   padding-bottom: 0;
-}
-
-.nexus-4-landscape .flashingTop {
-  width: 600px;
 }
 
 
@@ -276,11 +240,6 @@ span.time {
   padding-top: 95px;
   padding-bottom: 0;
   padding-left: 16px;
-}
-
-.ipad-portrait .flashingTop {
-  height: 95px;
-  width: 768px;
 }
 
 .ipad-portrait span.time {
@@ -301,11 +260,6 @@ span.time {
   padding-top: 93px;
   padding-bottom: 0;
   padding-left: 16px;
-}
-
-.ipad-landscape .flashingTop {
-  height: 93px;
-  width: 1024px;
 }
 
 .ipad-landscape span.time {
