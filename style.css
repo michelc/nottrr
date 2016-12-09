@@ -1,0 +1,368 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+body{margin: 0px}h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong,dt{font-weight:bold}optgroup{font-weight:normal}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}del{text-decoration:line-through}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}sup{vertical-align:super}sub{vertical-align:sub}p,fieldset,table,pre{margin-bottom:1em}button,input[type="checkbox"],input[type="radio"],input[type="reset"],input[type="submit"]{padding:1px}img{-ms-interpolation-mode:bicubic}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+.deviceTitle, #devices .deviceWrap {
+  min-width: 1024px;
+}
+
+
+/*
+ * Form styles
+ */
+
+header {
+  background-color: #777;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#url {
+  border: 0;
+  color: #555;
+  font-size: 16px;
+  min-width: 512px;
+  padding: 4px 7px 2px 7px;
+}
+
+
+/*
+ * Devices styles
+ */
+
+#devices {
+  text-align: center;
+}
+
+article {
+  text-align: center;
+}
+
+.deviceWrap {
+  background-position: top center;
+  background-repeat: no-repeat;
+  xmargin: 60px 0px 20px 0px;
+  margin: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+.device {
+  margin: 0 auto;
+  position: relative;
+}
+
+.flashingTop,
+.flashingBottom {
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.flashingTop {
+  padding-top: 4px;
+  top: 0;
+}
+
+.flashingBottom {
+  bottom: 0;
+}
+
+#devices iframe {
+  border: 1px solid #d1d1d1;
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+span.time {
+  color: white;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+}
+
+
+/**
+ * iPhone 5 portrait
+ */
+
+.iphone-5-portrait {
+  background-image: url(iphone-5-portrait.png);
+  padding: 103px 0 117px 0px;
+  padding-bottom: 103px;
+}
+
+.iphone-5-portrait .device {
+  width: 337px;
+  height: 504px;
+  padding-top: 20px;
+  padding-bottom: 44px;
+  padding-left: 16px;
+}
+
+.iphone-5-portrait .flashingTop {
+  height: 20px;
+  width: 320px;
+}
+
+.iphone-5-portrait .flashingBottom {
+  height: 44px;
+}
+
+
+/**
+ * iPhone 5 landscape
+ */
+
+.iphone-5-landscape {
+  background-image: url(iphone-5-landscape.png);
+  padding: 22px 0 24px 0px;
+  padding-bottom: 22px;
+}
+
+.iphone-5-landscape .device {
+  width: 585px;
+  height: 256px;
+  padding-top: 20px;
+  padding-bottom: 44px;
+  padding-left: 16px;
+}
+
+.iphone-5-landscape .flashingTop {
+  height: 20px;
+  width: 568px;
+}
+
+.iphone-5-landscape .flashingBottom {
+  height: 44px;
+}
+
+
+/**
+ * iPhone 6 portrait
+ */
+
+.iphone-6-portrait {
+  background-image: url(iphone-6-portrait.png);
+  padding: 103px 0 117px 0px;
+  padding-bottom: 103px;
+}
+
+.iphone-6-portrait .device {
+  width: 392px;
+  height: 603px;
+  padding-top: 20px;
+  padding-bottom: 44px;
+  padding-left: 16px;
+}
+
+.iphone-6-portrait .flashingTop {
+  height: 20px;
+  width: 320px;
+}
+
+.iphone-6-portrait .flashingBottom {
+  height: 44px;
+}
+
+
+/**
+ * iPhone 6 landscape
+ */
+
+.iphone-6-landscape {
+  background-image: url(iphone-6-landscape.png);
+  padding: 22px 0 24px 0px;
+  padding-bottom: 22px;
+}
+
+.iphone-6-landscape .device {
+  width: 684px;
+  height: 311px;
+  padding-top: 20px;
+  padding-bottom: 44px;
+  padding-left: 16px;
+}
+
+.iphone-6-landscape .flashingTop {
+  height: 20px;
+  width: 667px;
+}
+
+.iphone-6-landscape .flashingBottom {
+  height: 44px;
+}
+
+
+/**
+ * iPhone 6+ portrait
+ */
+
+.iphone-6-plus-portrait {
+  background-image: url(iphone-6-plus-portrait.png);
+  padding: 103px 0 117px 0px;
+  padding-bottom: 103px;
+}
+
+.iphone-6-plus-portrait .device {
+  width: 431px;
+  height: 672px;
+  padding-top: 20px;
+  padding-bottom: 44px;
+  padding-left: 16px;
+}
+
+.iphone-6-plus-portrait .flashingTop {
+  height: 20px;
+  width: 414px;
+}
+
+.iphone-6-plus-portrait .flashingBottom {
+  height: 44px;
+}
+
+
+/**
+ * iPhone 6+ landscape
+ */
+
+.iphone-6-plus-landscape {
+  background-image: url(iphone-6-plus-landscape.png);
+  padding: 22px 0 24px 0px;
+  padding-bottom: 22px;
+}
+
+.iphone-6-plus-landscape .device {
+  width: 753px;
+  height: 350px;
+  padding-top: 20px;
+  padding-bottom: 44px;
+  padding-left: 16px;
+}
+
+.iphone-6-plus-landscape .flashingTop {
+  height: 20px;
+  width: 736px;
+}
+
+.iphone-6-plus-landscape .flashingBottom {
+  height: 44px;
+}
+
+
+/**
+ * Nexus 4 portrait
+ */
+
+.nexus-4-portrait {
+  background-image: url(nexus-4-portrait.png);
+  padding: 68px 0 146px 0;
+}
+
+.nexus-4-portrait .device {
+  width: 401px;
+  height: 600px;
+  padding-top: 20px;
+  padding-left: 16px;
+}
+
+.nexus-4-portrait .flashingTop {
+  height: 20px;
+  width: 384px;
+}
+
+
+/**
+ * Nexus 4 landscape
+ */
+
+.nexus-4-landscape {
+  background-image: url(nexus-4-landscape.png);
+  padding: 22px 0 28px 0;
+  padding-bottom: 22px;
+}
+
+.nexus-4-landscape .device {
+  width: 617px;
+  height: 364px;
+  padding-top: 20px;
+  padding-left: 16px;
+}
+
+.nexus-4-landscape .flashingTop {
+  height: 20px;
+  width: 600px;
+}
+
+
+/**
+ * iPad portrait
+ */
+
+.ipad-portrait {
+  background-image: url(ipad-portrait.png);
+  padding: 111px 0 113px 0;
+  padding-bottom: 111px;
+}
+
+.ipad-portrait .device {
+  width: 785px;
+  height: 929px;
+  padding-top: 95px;
+  padding-left: 16px;
+}
+
+.ipad-portrait .flashingTop {
+  height: 95px;
+  width: 768px;
+}
+
+.ipad-portrait span.time {
+  color: #bbb;
+}
+
+
+/**
+ * iPad landscape
+ */
+
+.ipad-landscape {
+  background-image: url(ipad-landscape.png);
+  padding: 101px 0 103px 0;
+  padding-bottom: 101px;
+}
+
+.ipad-landscape .device {
+  width: 1041px;
+  height: 675px;
+  padding-top: 93px;
+  padding-left: 16px;
+}
+
+.ipad-landscape .flashingTop {
+  height: 93px;
+  width: 1024px;
+}
+
+.ipad-landscape span.time {
+  color: #bbb;
+}

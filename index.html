@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOT The Real Responsinator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <form>
+        <input id="url" type="text" value="file:///C:/MVC/saint-privat.eu.org/docs/index.html">
+      </form>
+    </header>
+
+    <section id="devices">
+
+      <article>
+        <div class="deviceWrap iphone-5-portrait">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>iPhone 5 portrait · width: 320px</p>
+      </article>
+
+      <article>
+        <div class="deviceWrap iphone-5-landscape">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>iPhone 5 landscape · width: 568px</p>
+      </article>
+
+      <article>
+        <div class="deviceWrap iphone-6-portrait">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>iPhone 6 portrait · width: 375px</p>
+      </article>
+
+      <article>
+        <div class="deviceWrap iphone-6-landscape">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>iPhone 6 landscape · width: 667px</p>
+      </article>
+
+      <article>
+        <div class="deviceWrap iphone-6-plus-portrait">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>iPhone 6+ portrait · width: 414px</p>
+      </article>
+
+      <article>
+        <div class="deviceWrap iphone-6-plus-landscape">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>iPhone 6+ landscape · width: 736px</p>
+      </article>
+
+      <article>
+        <div class="deviceWrap nexus-4-portrait">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>Nexus 4 portrait · width: 384px</p>
+      </article>
+
+      <article>
+        <div class="deviceWrap nexus-4-landscape">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>Nexus 4 landscape · width: 600px</p>
+      </article>
+
+      <article>
+        <div class="deviceWrap ipad-portrait">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>iPad portrait · width: 768px</p>
+      </article>
+
+      <article>
+        <div class="deviceWrap ipad-landscape">
+          <div class="device">
+            <div class="flashingTop">
+              <span class="time">10:29 <span>AM</span></span>
+            </div>
+            <div class="flashingBottom"></div>
+            <iframe src=""></iframe>
+          </div>
+        </div>
+        <p>iPad landscape · width: 1024px</p>
+      </article>
+
+    </section>
+
+    <script>
+      var url = document.getElementById("url")
+        , iframes = document.querySelectorAll("iframe");
+      [].forEach.call(iframes, function (iframe) {
+        iframe.src = url.value;
+      });
+    </script>
+
+  </body>
+
+</html>
