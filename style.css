@@ -28,12 +28,20 @@ header {
   text-align: center;
 }
 
-#url {
+input {
   border: 0;
-  color: #555;
   font-size: 16px;
-  min-width: 512px;
   padding: 4px 7px 2px 7px;
+}
+
+#url {
+  color: #555;
+  min-width: 512px;
+}
+
+#go {
+  background-color: #2962ff;
+  color: #fff;
 }
 
 
