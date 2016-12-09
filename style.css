@@ -19,27 +19,8 @@ body {
   line-height: 100%;
 }
 
-.deviceTitle, #devices .deviceWrap {
-  min-width: 1024px;
-}
 
-footer {
-  background-color: #777;
-  color: #fff;
-  margin-top: 20px;
-  padding: 10px 0;
-  text-align: center;
-}
-
-footer a {
-  color: #fff;
-  font-weight: bold;
-}
-
-
-/*
- * Form styles
- */
+/* Form styles */
 
 header {
   background-color: #777;
@@ -57,9 +38,23 @@ header {
 }
 
 
-/*
- * Devices styles
- */
+/* Footer styles */
+
+footer {
+  background-color: #777;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* Devices styles */
 
 #devices {
   text-align: center;
@@ -72,7 +67,6 @@ article {
 .deviceWrap {
   background-position: top center;
   background-repeat: no-repeat;
-  xmargin: 60px 0px 20px 0px;
   margin: 10px 0;
   position: relative;
   width: 100%;
@@ -80,23 +74,22 @@ article {
 
 .device {
   margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 44px;
+  padding-left: 16px;
   position: relative;
 }
 
-.flashingTop,
-.flashingBottom {
+.flashingTop {
   left: 0;
   position: absolute;
   width: 100%;
 }
 
 .flashingTop {
+  height: 20px;
   padding-top: 4px;
   top: 0;
-}
-
-.flashingBottom {
-  bottom: 0;
 }
 
 #devices iframe {
@@ -114,177 +107,109 @@ span.time {
 }
 
 
-/**
- * iPhone 5 portrait
- */
+/* iPhone 5 portrait  */
 
 .iphone-5-portrait {
   background-image: url(iphone-5-portrait.png);
-  padding: 103px 0 117px 0px;
-  padding-bottom: 103px;
+  padding: 103px 0;
 }
 
 .iphone-5-portrait .device {
   width: 337px;
   height: 504px;
-  padding-top: 20px;
-  padding-bottom: 44px;
-  padding-left: 16px;
 }
 
 .iphone-5-portrait .flashingTop {
-  height: 20px;
   width: 320px;
 }
 
-.iphone-5-portrait .flashingBottom {
-  height: 44px;
-}
 
-
-/**
- * iPhone 5 landscape
- */
+/* iPhone 5 landscape  */
 
 .iphone-5-landscape {
   background-image: url(iphone-5-landscape.png);
-  padding: 22px 0 24px 0px;
-  padding-bottom: 22px;
+  padding: 22px 0;
 }
 
 .iphone-5-landscape .device {
   width: 585px;
   height: 256px;
-  padding-top: 20px;
-  padding-bottom: 44px;
-  padding-left: 16px;
 }
 
 .iphone-5-landscape .flashingTop {
-  height: 20px;
   width: 568px;
 }
 
-.iphone-5-landscape .flashingBottom {
-  height: 44px;
-}
 
-
-/**
- * iPhone 6 portrait
- */
+/* iPhone 6 portrait */
 
 .iphone-6-portrait {
   background-image: url(iphone-6-portrait.png);
-  padding: 103px 0 117px 0px;
-  padding-bottom: 103px;
+  padding: 103px 0;
 }
 
 .iphone-6-portrait .device {
   width: 392px;
   height: 603px;
-  padding-top: 20px;
-  padding-bottom: 44px;
-  padding-left: 16px;
 }
 
 .iphone-6-portrait .flashingTop {
-  height: 20px;
   width: 320px;
 }
 
-.iphone-6-portrait .flashingBottom {
-  height: 44px;
-}
 
-
-/**
- * iPhone 6 landscape
- */
+/* iPhone 6 landscape */
 
 .iphone-6-landscape {
   background-image: url(iphone-6-landscape.png);
-  padding: 22px 0 24px 0px;
-  padding-bottom: 22px;
+  padding: 22px 0;
 }
 
 .iphone-6-landscape .device {
   width: 684px;
   height: 311px;
-  padding-top: 20px;
-  padding-bottom: 44px;
-  padding-left: 16px;
 }
 
 .iphone-6-landscape .flashingTop {
-  height: 20px;
   width: 667px;
 }
 
-.iphone-6-landscape .flashingBottom {
-  height: 44px;
-}
 
-
-/**
- * iPhone 6+ portrait
- */
+/* iPhone 6+ portrait  */
 
 .iphone-6-plus-portrait {
   background-image: url(iphone-6-plus-portrait.png);
-  padding: 103px 0 117px 0px;
-  padding-bottom: 103px;
+  padding: 103px 0;
 }
 
 .iphone-6-plus-portrait .device {
   width: 431px;
   height: 672px;
-  padding-top: 20px;
-  padding-bottom: 44px;
-  padding-left: 16px;
 }
 
 .iphone-6-plus-portrait .flashingTop {
-  height: 20px;
   width: 414px;
 }
 
-.iphone-6-plus-portrait .flashingBottom {
-  height: 44px;
-}
 
-
-/**
- * iPhone 6+ landscape
- */
+/* iPhone 6+ landscape */
 
 .iphone-6-plus-landscape {
   background-image: url(iphone-6-plus-landscape.png);
-  padding: 22px 0 24px 0px;
-  padding-bottom: 22px;
+  padding: 22px 0;
 }
 
 .iphone-6-plus-landscape .device {
   width: 753px;
   height: 350px;
-  padding-top: 20px;
-  padding-bottom: 44px;
-  padding-left: 16px;
 }
 
 .iphone-6-plus-landscape .flashingTop {
-  height: 20px;
   width: 736px;
 }
 
-.iphone-6-plus-landscape .flashingBottom {
-  height: 44px;
-}
 
-
-/**
- * Nexus 4 portrait
- */
+/* Nexus 4 portrait */
 
 .nexus-4-portrait {
   background-image: url(nexus-4-portrait.png);
@@ -294,53 +219,44 @@ span.time {
 .nexus-4-portrait .device {
   width: 401px;
   height: 600px;
-  padding-top: 20px;
-  padding-left: 16px;
+  padding-bottom: 0;
 }
 
 .nexus-4-portrait .flashingTop {
-  height: 20px;
   width: 384px;
 }
 
 
-/**
- * Nexus 4 landscape
- */
+/* Nexus 4 landscape */
 
 .nexus-4-landscape {
   background-image: url(nexus-4-landscape.png);
-  padding: 22px 0 28px 0;
-  padding-bottom: 22px;
+  padding: 22px 0;
 }
 
 .nexus-4-landscape .device {
   width: 617px;
   height: 364px;
-  padding-top: 20px;
-  padding-left: 16px;
+  padding-bottom: 0;
 }
 
 .nexus-4-landscape .flashingTop {
-  height: 20px;
   width: 600px;
 }
 
 
-/**
- * iPad portrait
- */
+/* iPad portrait */
 
 .ipad-portrait {
   background-image: url(ipad-portrait.png);
-  padding: 111px 0 113px 0;
-  padding-bottom: 111px;
+  padding: 111px 0;
 }
 
 .ipad-portrait .device {
   width: 785px;
   height: 929px;
   padding-top: 95px;
+  padding-bottom: 0;
   padding-left: 16px;
 }
 
@@ -354,20 +270,18 @@ span.time {
 }
 
 
-/**
- * iPad landscape
- */
+/* iPad landscape */
 
 .ipad-landscape {
   background-image: url(ipad-landscape.png);
-  padding: 101px 0 103px 0;
-  padding-bottom: 101px;
+  padding: 101px 0;
 }
 
 .ipad-landscape .device {
   width: 1041px;
   height: 675px;
   padding-top: 93px;
+  padding-bottom: 0;
   padding-left: 16px;
 }
 
