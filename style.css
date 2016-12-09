@@ -24,7 +24,6 @@ body {
 
 header {
   background-color: #777;
-  margin-bottom: 20px;
   padding: 10px 0;
   text-align: center;
 }
@@ -43,7 +42,6 @@ header {
 footer {
   background-color: #777;
   color: #fff;
-  margin-top: 20px;
   padding: 10px 0;
   text-align: center;
 }
@@ -67,7 +65,7 @@ article {
 .deviceWrap {
   background-position: top center;
   background-repeat: no-repeat;
-  margin: 10px 0;
+  margin: 25px 0;
   position: relative;
   width: 100%;
 }
@@ -104,6 +102,18 @@ span.time {
   color: white;
   font-family: helvetica, arial, sans-serif;
   font-size: 12px;
+}
+
+
+.deviceWrap p {
+  color: #777;
+  display: inline-block;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -128px;
+  min-width: 256px;
+  position: absolute;
+  top: 1px;
 }
 
 
