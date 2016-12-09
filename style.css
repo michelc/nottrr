@@ -23,6 +23,19 @@ body {
   min-width: 1024px;
 }
 
+footer {
+  background-color: #777;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+}
+
 
 /*
  * Form styles
