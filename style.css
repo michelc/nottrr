@@ -23,32 +23,31 @@ body {
 /* Form styles */
 
 header {
-  background-color: #777;
+  background-color: #2962ff;
   padding: 10px 0;
   text-align: center;
 }
 
 input {
-  border: 0;
   font-size: 16px;
-  padding: 4px 7px 2px 7px;
 }
 
 #url {
+  border: 3px solid #fff;
   color: #555;
   min-width: 512px;
+  padding: 0 4px;
 }
 
 #go {
-  background-color: #2962ff;
-  color: #fff;
+  margin: 0;
 }
 
 
 /* Footer styles */
 
 footer {
-  background-color: #777;
+  background-color: #43a047;
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -77,22 +76,19 @@ article {
 
 .device {
   margin: 0 auto;
-  padding-top: 20px;
   padding-bottom: 44px;
   padding-left: 16px;
+  padding-top: 20px;
   position: relative;
 }
 
 .flashingTop {
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.flashingTop {
   height: 20px;
+  left: 0;
   padding-top: 4px;
+  position: absolute;
   top: 0;
+  width: 100%;
 }
 
 article iframe {
@@ -104,7 +100,7 @@ article iframe {
 }
 
 span.time {
-  color: white;
+  color: #fff;
   font-family: helvetica, arial, sans-serif;
   font-size: 12px;
 }
