@@ -15,7 +15,7 @@
     <header>
       <form>
         <input id="url" type="text" value="file:///C:/MVC/saint-privat.eu.org/docs/index.html">
-        <input id="go" type="button" value="GO">
+        <input id="go" type="submit" value="GO">
       </form>
     </header>
 
@@ -133,10 +133,15 @@
     <script>
       var url = document.getElementById("url")
         , go = document.getElementById("go")
+        , form = document.forms[0]
         , iframes = document.querySelectorAll("iframe");
-      go.addEventListener("click", function(e) {
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        var src = url.value.trim();
+        if (src.search(/\\/i) !== -1)
+          src = ("file:///" + src).replace(/\\/gi, "/");
       [].forEach.call(iframes, function (iframe) {
-          iframe.src = url.value;
+          iframe.src = src;
         });
       });
       go.click();
