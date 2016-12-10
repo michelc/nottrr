@@ -131,16 +131,19 @@
     </footer>
 
     <script>
-      var url = document.getElementById("url")
+      var hash = window.location.hash
+        , url = document.getElementById("url")
         , go = document.getElementById("go")
         , form = document.forms[0]
         , iframes = document.querySelectorAll("iframe");
+      if (hash) url.value = hash.substr(1);
       form.addEventListener("submit", function(e) {
         e.preventDefault();
         var src = url.value.trim();
+        window.location.hash = "#" + src;
         if (src.search(/\\/i) !== -1)
           src = ("file:///" + src).replace(/\\/gi, "/");
-      [].forEach.call(iframes, function (iframe) {
+        [].forEach.call(iframes, function (iframe) {
           iframe.src = src;
         });
       });
